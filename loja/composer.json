@@ -1,0 +1,12 @@
+{
+    "require": {
+        "smarty/smarty": "~3.1.11",
+        "phpmailer/phpmailer": "^6.5" 
+    },
+    
+    "config": {
+        "vendor-dir": "lib/"
+    },
+
+    "classmap" : ["model/"]
+}
