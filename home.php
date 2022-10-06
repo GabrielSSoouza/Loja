@@ -1,13 +1,3 @@
-<?php 
-
-require __DIR__."/vendor/autoload.php";
-use Kreait\Firebase\Factory;
-
-$factory = (new Factory())->withDatabaseUri("https://all-instruments-default-rtdb.firebaseio.com/");
-
-$database = $factory->createDatabase();
- $users = $database->getReference('users')->getSnapshot();
-?>
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
