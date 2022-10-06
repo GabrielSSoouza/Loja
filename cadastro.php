@@ -1,6 +1,3 @@
-<?php 
-require "./lib/autoloader"
-?>
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
@@ -9,24 +6,20 @@ require "./lib/autoloader"
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="Cache-Control" content="no-cache" />
     <title>Cadastre-se</title>
-    <link rel="stylesheet" href='./style/sign-in-up.css'>
+    <link rel="stylesheet" href='./view/tema/style/sign-in-up.css'>
 </head>
 <body>
     <header>
     <a href="home.php">
         <div class='conteiner-logo'>
         
-            <img src="images/logo.svg" width="90px" height="90px">
+            <img src="./media/images/logo.svg" width="90px" height="90px">
             </a>
         </div>
     <h2>All Instruments</h2>
 </header>
     <h2> Faça seu Cadastro :^)</h2>
-    <p>
-        <strong>
-            <?php echo $msg?>
-        </strong>
-    </p>
+
     <div class="form">
         <form name='formuser' method='POST'>
             <label for="id">Nome:</label>
