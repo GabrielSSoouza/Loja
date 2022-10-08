@@ -22,13 +22,14 @@
         </div>
         <div class="menu">
             <nav>
+                 
                 <ul>
-                    <a href="controller/produtos.php"><P>Produtos</P></a><br>
-                    <a href="controller/clientes.php"><p>Clientes</p></a><br>
-                    <a href="controller/contato.php"><p>Contato</p></a><br>
-                    <a href="controller/sobre.php"><p>Sobre</p></a><br>
-                    <a href="controller/conta.php"><p>Conta</p></a><br>
-                    <a href="controller/carrinho.php"><p>Carrinho</p></a><br> 
+                    <a href="controller/produtos.php"><P>Produtos</P></a>
+                    <a href="controller/clientes.php"><p>Clientes</p></a>
+                    <a href="controller/contato.php"><p>Contato</p></a>
+                    <a href="controller/sobre.php"><p>Sobre</p></a>
+                    <img src="" alt=""><a href="controller/conta.php"><p>Perfil</p></a></img> <!-- icone de perfil -->
+                    <a href="controller/carrinho.php"><p>Carrinho</p></a> 
                 </ul>
             </nav>
        </div>
