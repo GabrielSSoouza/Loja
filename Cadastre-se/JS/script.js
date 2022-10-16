@@ -1,6 +1,6 @@
 function validPassForce() {
-    var senha = document.getElementById('passF').value;
-    var strength = 0;
+    var senha = document.getElementById('passF').value
+    var strength = 0
 
     if((senha.length >= 5) && (senha.length <= 7)){
         strength += 12;
@@ -26,7 +26,7 @@ function validPassForce() {
 function showForce(strength){
 
     if ((strength < 12)){
-        document.getElementById("errorPassForce").innerHTML = '<span>Digite uma senha forte, <br> incluindo letras maiúsculas e carateres <br> especiais como: <strong>"@#$%&*"<strong></span>';
+        document.getElementById("errorPassForce").innerHTML = '<span>Inclua maiúsculas e caracteres especiais como:<strong>"@#$%&*"</strong></span>';
     }else if(strength < 38){
         document.getElementById("errorPassForce").innerHTML = "<span style='color: #ff0000'>Senha Fraca</span>";
 
@@ -40,32 +40,32 @@ function showForce(strength){
 }
 
 function verifyPass(){
-    var pass = formuser.pass.value;
+    var pass = formuser.passF.value;
     var confirm_pass = formuser.confirm_pass.value;
 
             if(pass == '' || pass.length <= 7){
-                document.getElementById('congrats').innerHTML = "<span style='color: #ffffff'>Confirme aqui a senha acima</span>"
-                formuser.pass.focus();
-                return false;
+                document.getElementById('congrats').innerHTML = "<span style='color: #000000'>Confirme aqui a senha acima</span>"
+                formuser.confirm_pass.focus();
+                return true;
             }
             if(confirm_pass == '' || confirm_pass.length <= 7){
                 document.getElementById('congrats').innerHTML = "<span style='color: #ff0000'>É necessário ter no mínimo 8 caracteres </span>"
-                form1.confirm_pass.focus();
-                return false;
+                formuser.confirm_pass.focus();
+                return true;
             }
             if(pass != confirm_pass){
-                document.getElementById('congrats').innerHTML = "<span style='color: #ffffff'>Senhas não coincidem</span>"
+                document.getElementById('congrats').innerHTML = "<span style='color: #ffd841'>Senhas não coincidem</span>"
                 formuser.confirm_pass.focus();
                 return false;
             }
             if(pass == confirm_pass){
-                document.getElementById('congrats').innerHTML = "<span style='color: #7fff00'>Senhas corretas</span>"
-                return false;
+                document.getElementById('congrats').innerHTML = "<span style='color: #00f413'>Senhas corretas</span>"
+                return true;
             }
 }
 function showPass(){
-    var tipo = document.getElementById('passF',  'confPass')
-    if(tipo.type == "password" ){
+    var tipo = document.getElementById('passF') 
+    if(tipo.type == "password"){
         tipo.type = 'text';
     }else{
         tipo.type = 'password'

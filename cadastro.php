@@ -7,6 +7,8 @@
     <meta http-equiv="Cache-Control" content="no-cache" />
     <title>Cadastre-se</title>
     <link rel="stylesheet" href='./view/tema/style/sign-in-up.css'>
+    <script src="./Cadastre-se/JS/script.js">
+    </script>
 </head>
 <body>
     <header>
@@ -22,25 +24,20 @@
 
     <div class="form">
         <form name='formuser' method='POST'>
-            <label for="id">Nome:</label>
+            
             <input type="text" name="nome" id="nome"  placeholder="digite seu nome" maxlength='30'>
             
-            <label for="id">Email:</label>
             <input type="email" name="Email" id="mail" placeholder="insira seu email" maxlength='40'> <!--required-->
 
             <div id='errorPassForce'></div>
-
-            <label for="id">Senha:</label>
             <input type="password" name="pass" id="passF" onkeyup="validPassForce()" placeholder="crie uma senha" maxlength="15"> <!--required-->
 
             <div id="show">
-                <input type="checkbox" id="check" onclick="showPass()"><p>Mostrar senha</p>
+                <input type="checkbox" id="check" onclick="showPass(this)"><p>Mostrar senha</p>
             </div>
 
             <div id="congrats"></div>
-
-            <label for="id">Confirmar Senha:</label>
-            <input type="password" name="confirm_pass" id="confPass" onkeyup="verifyPass()" placeholder="confirme sua senha" >  <!--required-->
+            <input type="password" name="confirm_pass" id="confPass" onkeyup="verifyPass()" placeholder="confirme sua senha" maxlength="15">  <!--required-->
             
             <input type="submit" id="btn" onclick="verifyPass()" value="Cadastrar">
             <!--
@@ -48,7 +45,5 @@
             -->
         </form>
     </div>
-    <script src="./Cadastre-se/JS/script.js">
-    </script>
 </body>
 </html>
