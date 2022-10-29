@@ -1,3 +1,9 @@
+<?php 
+
+include('./controller/conectar.php');
+
+?>
+
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
@@ -12,22 +18,28 @@
         <div class="container_logo">
             <div class="logo">
                 <a href="home.php">
-                <img src="./media/images/logo.svg" width="90" height="90">
+                <img src="./view/imagens/logo.svg" width="90" height="90">
                 </a>
                 <h1>AllInstruments</h1>
             </div>
         </div>
-        <div class="logo-texto">
-            
-        </div>
+            <div class="search-box">
+                <input type="text" name="search" id="" class="search-txt" placeholder="Pesquisar">
+                <a href="#" class="search-btn">
+                    <img src="./view/imagens/loupe.svg" alt="Pesquisar">
+                </a>
+            </div>
         <div class="menu">
             <nav>
-                 
                 <ul>
                     <a href="controller/produtos.php"><P>Produtos</P></a>
+
                     <a href="controller/clientes.php"><p>Clientes</p></a>
+
                     <a href="controller/contato.php"><p>Contato</p></a>
+
                     <a href="controller/sobre.php"><p>Sobre</p></a>
+
                     <img src="" alt=""><a href="controller/conta.php"><p>Perfil</p></a></img> <!-- icone de perfil -->
                     <a href="controller/carrinho.php"><p>Carrinho</p></a> 
                 </ul>
@@ -35,6 +47,8 @@
        </div>
     </header>
     <body>
-        <h1>Bruce, veja algo sobre grid e flex-box pra fzr a home 👍</h1>
+        <?php 
+        
+        ?>
     </body>
 </html>
