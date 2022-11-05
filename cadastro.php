@@ -6,13 +6,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="Cache-Control" content="no-cache" />
     <title>Cadastre-se</title>
-    <link rel="stylesheet" href='./view/tema/style/sign-in-up.css'>
+    <link rel="stylesheet" href='./view/tema/style/cadastro.css'>
     <script src="./Cadastre-se/JS/script.js">
     </script>
 </head>
 <body>
     <header>
-    <a href="home.php">
+    <a href="index.php">
         <div class='conteiner-logo'>
         
             <img src="./media/images/logo.svg" width="90px" height="90px">

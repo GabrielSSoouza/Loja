@@ -1,6 +1,5 @@
 <?php 
 
-include('./controller/conectar.php');
 
 ?>
 
@@ -12,7 +11,7 @@ include('./controller/conectar.php');
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="Cache-Control" content="no-cache" />
     <link rel="stylesheet" href="./view/tema/style/home.css">
-    <title>Menu</title>
+    <title>Inicio</title>
 </head> 
     <header>
         <div class="container_logo">
@@ -34,14 +33,14 @@ include('./controller/conectar.php');
                 <ul>
                     <a href="controller/produtos.php"><P>Produtos</P></a>
 
-                    <a href="controller/clientes.php"><p>Clientes</p></a>
-
                     <a href="controller/contato.php"><p>Contato</p></a>
 
                     <a href="controller/sobre.php"><p>Sobre</p></a>
 
                     <img src="" alt=""><a href="controller/conta.php"><p>Perfil</p></a></img> <!-- icone de perfil -->
                     <a href="controller/carrinho.php"><p>Carrinho</p></a> 
+
+                    <a href="cadastro.php"><p>Cadastro</p></a>
                 </ul>
             </nav>
        </div>
