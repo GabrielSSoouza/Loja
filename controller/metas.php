@@ -12,7 +12,7 @@
   <meta name="description" content="" />
   <meta name="author" content="" />
 
-  <title>Sobre</title>
+  <title>Metas</title>
 
   <!-- slider stylesheet -->
   <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.1.3/assets/owl.carousel.min.css" />
@@ -33,7 +33,7 @@
     <!-- header section strats -->
     <div class="brand_box">
       <a class="navbar-brand" href="../index.php">
-        <span>All Instruments</span>
+        <span>all Instruments</span>
       </a>
     </div>
     <!-- end header section -->
@@ -83,34 +83,100 @@
 
   <!-- end nav section -->
 
-  <!-- about section -->
 
-  <section class="about_section layout_padding">
-    <div class="container-fluid">
-      <div class="row">
-        <div class="col-md-6 px-0">
-          <div class="img-box">
-            <img src="../media/images/about-img.png" alt="">
-          </div>
-        </div>
-        <div class="col-md-5">
-          <div class="detail-box">
-            <div class="heading_container">
-              <hr>
-              <h2>sobre nossos produtos</h2>
-            </div>
-            <p>Uma grande variedade de produtos e preços dedicados a todo tipo de consumidor. Em breve com inclusão de pessoas cm necessidades especiais.</p>
-            <a href="">Ler mais</a>
-          </div>
-        </div>
+  <!-- client section -->
+
+  <section class="client_section layout_padding">
+    <div class="container ">
+      <div class="heading_container">
+        <h2>O que podemos oferecer:</h2>
+        <hr>
       </div>
+      <div id="carouselExample2Controls" class="carousel slide" data-ride="carousel">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <div class="client_container layout_padding-top">
+              <div class="img-box">
+                <img src="../media/images/pietra.jpg" alt="">
+              </div>
+              <div class="detail-box">
+                <h5>Pietra</h5>
+                <p>Proposta:</p>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="client_container layout_padding-top">
+              <div class="img-box">
+                <img src="../media/images/gabriel.jpeg" alt="">
+              </div>
+              <div class="detail-box">
+                <h5>Gabriel</h5>
+                <p>Proposta:</p>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="client_container layout_padding-top">
+              <div class="img-box">
+                <img src="../media/images/joão.jpeg" alt="">
+              </div>
+              <div class="detail-box">
+                <h5>João</h5>
+                <p>Proposta:</p>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="client_container layout_padding-top">
+              <div class="img-box">
+                <img src="../media/images/kaua.jpeg" alt="">
+              </div>
+              <div class="detail-box">
+                <h5>Kauã</h5>
+                <p>Proposta:</p>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="client_container layout_padding-top">
+              <div class="img-box">
+                <img src="../media/images/nicolas.jpeg" alt="">
+              </div>
+              <div class="detail-box">
+                <h5>Nicolas</h5>
+                <p>Proposta:</p>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="client_container layout_padding-top">
+              <div class="img-box">
+                <img src="../media/images/bruce.jpeg" alt="">
+              </div>
+              <div class="detail-box">
+                <h5>Bruce</h5>
+                <p>Proposta:</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <a class="carousel-control-prev" href="#carouselExample2Controls" role="button" data-slide="prev">
+          <img src="../media/images/prev.png" alt="">
+          <span class="sr-only">Previous</span>
+        </a>
+        <a class="carousel-control-next" href="#carouselExample2Controls" role="button" data-slide="next">
+          <img src="../media/images/next.png" alt="">
+          <span class="sr-only">Next</span>
+        </a>
+      </div>
+
     </div>
   </section>
 
-  <!-- end about section -->
+  <!-- end client section -->
 
   <!-- info section -->
-
   <section class="info_section layout_padding">
     <div class="container">
       <div class="info_logo">
@@ -120,7 +186,7 @@
         <div class="row">
           <div class="col-md-4">
             <a href="">
-              <img src="../media/images/location.png" alt="">
+              <img src="../mediaimages/location.png" alt="">
               <span>Sede da empresa</span>
             </a>
           </div>
@@ -180,16 +246,18 @@
 
 
   <!-- footer section -->
-  <section class="container-fluid footer_section">
+  <section class="container-fluid footer_section ">
     <p>
-      &copy; <span id="displayYear"></span> Todos os direitos reservados</p>
+      &copy; <span id="displayYear"></span> Todos os direitos reservados
+    </p>
   </section>
   <!-- footer section -->
-
+  
 
   <script type="text/javascript" src="../view/js/jquery-3.4.1.min.js"></script>
   <script type="text/javascript" src="../view/js/bootstrap.js"></script>
   <script type="text/javascript" src="../view/js/custom.js"></script>
+
 </body>
 
 </html>
