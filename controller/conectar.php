@@ -1,8 +1,8 @@
 <?php
 $host = "localhost";
-$db = "loja_db";
-$user = "root";
-$pass = "";
+$db = "fmmkayoa_allinstruments";
+$user = "fmmkayoa_allinstruments";
+$pass = "allinstruments";
 
 $mysqli = new mysqli($host,$user,$pass,$db);
 if ($mysqli->connect_errno) {
