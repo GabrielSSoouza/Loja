@@ -28,7 +28,7 @@ include('./controller/process.php');
     <h2> Faça seu Cadastro :^)</h2>
 
     <div class="form">
-        <form name='formuser' method='POST' action="">
+        <form name='formuser' method='POST' action="process.php">
             
             <input type="text" name="nome" id="nome"  placeholder="digite seu nome" maxlength='30'>
             
