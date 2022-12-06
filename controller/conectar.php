@@ -1,11 +1,11 @@
 <?php
-$host = "localhost";
-$db = "fmmkayoa_allinstruments";
-$user = "fmmkayoa_allinstruments";
-$pass = "allinstruments";
 
-$mysqli = new mysqli($host,$user,$pass,$db);
-if ($mysqli->connect_errno) {
-    die("Falha ao conectar no banco");
+$conexao = new PDO("mysql:host=localhost;dbname=fmmkayoa_allinstruments", "fmmkayoa_allinstruments", "allinstruments");
+$conexao->exec("SET CHARACTER SET utf8");
+
+try {
+    $pdo = $conexao;
+} catch (PDOException $e) {
+    echo $e->getMessage;
 }
 ?>
