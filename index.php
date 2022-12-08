@@ -11,6 +11,8 @@
   <meta name="keywords" content="" />
   <meta name="description" content="" />
   <meta name="author" content="" />
+  <!-- Icone -->
+  <link rel="icon" href="#">
 
   <title>Home</title>
 
@@ -34,8 +36,9 @@
     <div class="brand_box">
       <a class="navbar-brand" href="index.php">
         <span>
+          <img src="#" alt="All Instruments">
           All Instruments
-        </span>
+        </span> 
       </a>
     </div>
     <!-- end header section -->
