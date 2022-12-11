@@ -1,5 +1,5 @@
 <?php
-include('./controller/conectar.php');
+include('conectar.php');
 
 if(isset($_POST['email']) || isset($_POST[''])) {
 
@@ -12,7 +12,7 @@ if(isset($_POST['email']) || isset($_POST[''])) {
       $email = $mysqli->real_escape_string($_POST['email']);
       $senha = $mysqli->real_escape_string($_POST['pass']);
 
-      $sql_code = "SELECT * FROM tbl_usuarios WHERE email = '$email' AND senha = '$pass'";
+      $sql_code = "SELECT * FROM usuarios WHERE email = '$email' AND senha = '$senha'";
       $sql_query = $mysqli->query($sql_code) or die("falha na execução do código SQL: " . $mysqli->error);
 
       $quantidade = $sql_query->num_rows;
@@ -55,7 +55,7 @@ if(isset($_POST['email']) || isset($_POST[''])) {
     </p>
     <p>
         <label>Senha</label>
-        <input type="password" name="pass">
+        <input type="password" name="senha">
     </p>
     <p>
         <button type="submit">Entrar</button>
