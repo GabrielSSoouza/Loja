@@ -181,42 +181,42 @@
 
       <div class="fruit_container">
         <div class="box">
-          <img src="media/images/clarinete-sopro.jpeg" alt="">
+          <img src="https://images-americanas.b2w.io/produtos/27372915/imagens/clarinete-eagle-cl04n-sib/27372917_1_large.jpg" alt="">
           <div class="link_box">
             <h5>Clarinete (Sopro)</h5>
             <a href="">Comprar</a>
           </div>
         </div>
         <div class="box">
-          <img src="media/images/bateria-eletronica.jpeg" alt="">
+          <img src="https://imgs.casasbahia.com.br/1501535984/1xg.jpg?imwidth=500" alt="">
           <div class="link_box">
             <h5>Bateria Elétrica (Eletronico)</h5>
             <a href="">Comprar</a>
           </div>
         </div>
         <div class="box">
-          <img src="media/images/bongo.jpeg" alt="">
+          <img src="https://imgs.casasbahia.com.br/1515938098/1xg.jpg?imwidth=500" alt="">
           <div class="link_box">
             <h5>Bongo (percursão)</h5>
             <a href="">Comprar</a>
           </div>
         </div>
         <div class="box">
-          <img src="media/images/berimbau.jpeg" alt="">
+          <img src="https://images-americanas.b2w.io/produtos/2386442759/imagens/berimbau-profissional-pequeno-1-2m-gope-5007-completo-capoeira/2386442767_1_large.jpg" alt="">
           <div class="link_box">
             <h5>Berimbau (Corda)</h5>
             <a href="">Comprar</a>
           </div>
         </div>
         <div class="box">
-          <img src="media/images/gaita-de-fole.jpeg" alt="">
+          <img src="https://i.ebayimg.com/images/g/6-sAAOSwEONcK2Eu/s-l500.jpg" alt="">
           <div class="link_box">
             <h5>Gaita-de-fole</h5>
             <a href="">Comprar</a>
           </div>
         </div>
         <div class="box">
-          <img src="media/images/sampler.jpg" alt="">
+          <img src="https://images-americanas.b2w.io/produtos/102715095/imagens/sampler-pioneer-dj-tsp-16-profissional/102715097_1_large.jpg" alt="">
           <div class="link_box">
             <h5>Sampler (eletronico)</h5>
             <a href="">Comprar</a>
