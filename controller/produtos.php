@@ -94,6 +94,48 @@
     </div>
     <div class="container-fluid">
 
+      
+      <?php
+    $servername = "localhost";
+    $username = "fmmkayoa_allinstruments";
+    $password = "allinstruments";
+    $dbname = "fmmkayoa_allinstruments";
+    
+    // Create connection
+$conn = new mysqli($servername, $username, $password, $dbname);
+// Check connection
+if ($conn->connect_error) {
+  die("Connection failed: " . $conn->connect_error);
+}
+    
+    $sql = "SELECT * FROM `produtos`;";
+    $result = $conn->query($sql);
+    
+      
+      
+      
+$conn->close();
+    
+?><?php
+      if ($result->num_rows > 0) {
+  // output data of each row
+        echo '<div class="fruit_container">';
+  while($row = $result->fetch_assoc()) {
+    echo "<div class='box'>
+    <img src='#' ". $row["imagem"].">
+    <div class='link_box'>
+    <h5>" . $row["nome"]. "</h5>
+    <h5>Preco " . $row["preco"]. "</h5></div></div>";
+  }
+  echo '</div>';
+} else {
+  echo "0 results";
+}
+      ?>
+      
+      <?php
+      ?>
+      
       <div class="fruit_container">
         <div class="box">
           <img src="../media/images/bateria-eletronica.jpeg" alt="">

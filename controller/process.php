@@ -3,10 +3,10 @@ session_start();
 
 
 $nome = $_POST['nome'];
-$email = $_POST['Email'];
+$email = $_POST['email'];
 $senha = $_POST['pass'];
 
-$sql = "insert into usuarios (nome, email, senha) values ('$nome', '$email', '$senha')";
+$sql = "INSERT INTO usuarios (nome, email, senha) VALUES ('$nome', '$email', '$senha')";
 
 $conn = new mysqli("localhost", "fmmkayoa_allinstruments", "allinstruments", "fmmkayoa_allinstruments");
 

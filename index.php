@@ -36,7 +36,7 @@
     <div class="brand_box">
       <a class="navbar-brand" href="index.php">
         <span>
-          <img src="#" alt="All Instruments">
+          <img src="#">
           All Instruments
         </span> 
       </a>
@@ -106,7 +106,7 @@
                   <a class="nav-link" href="controller/contato.php">Contate-nos</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="#">Login</a>
+                  <a class="nav-link" href="login.php">Login</a>
                 </li>
               </ul>
               <form class="form-inline my-2 my-lg-0 ml-0 ml-lg-4 mb-3 mb-lg-0">

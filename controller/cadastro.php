@@ -27,7 +27,7 @@
             
             <input type="text" name="nome" id="nome"  placeholder="digite seu nome" maxlength='30'>
             
-            <input type="email" name="Email" id="mail" placeholder="insira seu email" maxlength='40'> <!--required-->
+            <input type="email" name="email" id="mail" placeholder="insira seu email" maxlength='40'> <!--required-->
 
             <div id='errorPassForce'></div>
             <input type="password" name="pass" id="passF" onkeyup="validPassForce()" placeholder="crie uma senha" maxlength="15"> <!--required-->
