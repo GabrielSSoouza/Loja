@@ -1,8 +1,3 @@
-<?php
-include('./controller/conectar.php');
-include('./controller/process.php');
-
-?>
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
@@ -12,8 +7,7 @@ include('./controller/process.php');
     <meta http-equiv="Cache-Control" content="no-cache" />
     <title>Cadastre-se</title>
     <link rel="stylesheet" href='../view/tema/style/cadastro.css'>
-    <script src="./Cadastre-se/JS/script.js">
-    </script>
+    <script src="./Cadastre-se/JS/script.js"></script>
 </head>
 <body>
     <header>
@@ -32,7 +26,7 @@ include('./controller/process.php');
             
             <input type="text" name="nome" id="nome"  placeholder="digite seu nome" maxlength='30'>
             
-            <input type="email" name="email" id="mail" placeholder="insira seu email" maxlength='40'> <!--required-->
+            <input type="email" name="Email" id="mail" placeholder="insira seu email" maxlength='40'> <!--required-->
 
             <div id='errorPassForce'></div>
             <input type="password" name="pass" id="passF" onkeyup="validPassForce()" placeholder="crie uma senha" maxlength="15"> <!--required-->
