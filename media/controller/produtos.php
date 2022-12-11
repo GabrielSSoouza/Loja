@@ -125,7 +125,7 @@ $conn->close();
     <img src='". $row["imagem"]."' >
     <div class='link_box'>
     <h5>" . $row["nome"]. "</h5>
-    <h5>Preco " . $row["preco"]. "</h5></div></div>";
+    <h5>Preco " . $row["preco"]. "</h5></div></div> ";
   }
   echo '</div>';
 } else {
@@ -137,7 +137,6 @@ $conn->close();
       ?>
       
      
-
   <!-- end fruit section -->
 
 

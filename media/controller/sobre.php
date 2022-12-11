@@ -12,7 +12,7 @@
   <meta name="description" content="" />
   <meta name="author" content="" />
 
-  <title>Produtos</title>
+  <title>Sobre</title>
 
   <!-- slider stylesheet -->
   <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.1.3/assets/owl.carousel.min.css" />
@@ -56,7 +56,7 @@
                   <a class="nav-link" href="../index.php">Home <span class="sr-only">(current)</span></a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="sobre.php">Sobre</a>
+                  <a class="nav-link" href="sobre.php">Sobre </a>
                 </li>
                 <li class="nav-item">
                   <a class="nav-link" href="produtos.php">Produtos</a>
@@ -83,63 +83,31 @@
 
   <!-- end nav section -->
 
-  <!-- fruit section -->
+  <!-- about section -->
 
-  <section class="fruit_section layout_padding">
-    <div class="container">
-      <div class="heading_container">
-        <hr>
-        <h2>Produtos</h2>
+  <section class="about_section layout_padding">
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-md-6 px-0">
+          <div class="img-box">
+            <img src="../media/images/about-img.png" alt="">
+          </div>
+        </div>
+        <div class="col-md-5">
+          <div class="detail-box">
+            <div class="heading_container">
+              <hr>
+              <h2>sobre nossos produtos</h2>
+            </div>
+            <p>Uma grande variedade de produtos e preços dedicados a todo tipo de consumidor. Em breve com inclusão de pessoas cm necessidades especiais.</p>
+            <a href="">Ler mais</a>
+          </div>
+        </div>
       </div>
     </div>
-    <div class="container-fluid">
+  </section>
 
-      
-      <?php
-    $servername = "localhost";
-    $username = "fmmkayoa_allinstruments";
-    $password = "allinstruments";
-    $dbname = "fmmkayoa_allinstruments";
-    
-    // Create connection
-$conn = new mysqli($servername, $username, $password, $dbname);
-// Check connection
-if ($conn->connect_error) {
-  die("Connection failed: " . $conn->connect_error);
-}
-    
-    $sql = "SELECT * FROM `produtos`;";
-    $result = $conn->query($sql);
-    
-      
-      
-      
-$conn->close();
-    
-?><?php
-      if ($result->num_rows > 0) {
-  // output data of each row
-        echo '<div class="fruit_container">';
-  while($row = $result->fetch_assoc()) {
-    echo "<div class='box'>
-    <img src='". $row["imagem"]."' >
-    <div class='link_box'>
-    <h5>" . $row["nome"]. "</h5>
-    <h5>Preco " . $row["preco"]. "</h5></div></div>";
-  }
-  echo '</div>';
-} else {
-  echo "0 results";
-}
-      ?>
-      
-      <?php
-      ?>
-      
-     
-
-  <!-- end fruit section -->
-
+  <!-- end about section -->
 
   <!-- info section -->
 
@@ -212,10 +180,9 @@ $conn->close();
 
 
   <!-- footer section -->
-  <section class="container-fluid footer_section ">
+  <section class="container-fluid footer_section">
     <p>
-      &copy; <span id="displayYear"></span> Todos os direitos reservados
-    </p>
+      &copy; <span id="displayYear"></span> Todos os direitos reservados</p>
   </section>
   <!-- footer section -->
 
@@ -223,7 +190,6 @@ $conn->close();
   <script type="text/javascript" src="../view/js/jquery-3.4.1.min.js"></script>
   <script type="text/javascript" src="../view/js/bootstrap.js"></script>
   <script type="text/javascript" src="../view/js/custom.js"></script>
-
 </body>
 
 </html>

@@ -12,7 +12,7 @@
   <meta name="description" content="" />
   <meta name="author" content="" />
 
-  <title>Produtos</title>
+  <title>Contato</title>
 
   <!-- slider stylesheet -->
   <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.1.3/assets/owl.carousel.min.css" />
@@ -56,7 +56,7 @@
                   <a class="nav-link" href="../index.php">Home <span class="sr-only">(current)</span></a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="sobre.php">Sobre</a>
+                  <a class="nav-link" href="sobre.php">Sobre </a>
                 </li>
                 <li class="nav-item">
                   <a class="nav-link" href="produtos.php">Produtos</a>
@@ -83,62 +83,54 @@
 
   <!-- end nav section -->
 
-  <!-- fruit section -->
 
-  <section class="fruit_section layout_padding">
-    <div class="container">
-      <div class="heading_container">
-        <hr>
-        <h2>Produtos</h2>
+  <!-- contact section -->
+  <section class="contact_section layout_padding">
+    <div class="container-fluid">
+      <div class="row">
+        <div class="offset-lg-2 col-md-10 offset-md-1">
+          <div class="heading_container">
+            <hr>
+            <h2>Envie uma mensagem</h2>
+          </div>
+        </div>
+      </div>
+
+      <div class="layout_padding2-top">
+        <div class="row">
+          <div class="col-lg-4 offset-lg-2 col-md-5 offset-md-1">
+            <form action="">
+              <div class="contact_form-container">
+                <div>
+                  <div>
+                    <input type="text" placeholder="Nome Completo" />
+                  </div>
+                  <div>
+                    <input type="email" placeholder="Email" />
+                  </div>
+                  <div>
+                    <input type="text" placeholder="Numero de Telefone" />
+                  </div>
+                  <div>
+                    <input type="text" class="message_input" placeholder="Mensagem" />
+                  </div>
+                  <div>
+                    <button type="submit">Enviar</button>
+                  </div>
+                </div>
+              </div>
+            </form>
+          </div>
+          <div class="col-md-6 px-0">
+            <img src="../media/images/about-img2.png" alt="">
+          </div>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
-    <div class="container-fluid">
-
-      
-      <?php
-    $servername = "localhost";
-    $username = "fmmkayoa_allinstruments";
-    $password = "allinstruments";
-    $dbname = "fmmkayoa_allinstruments";
-    
-    // Create connection
-$conn = new mysqli($servername, $username, $password, $dbname);
-// Check connection
-if ($conn->connect_error) {
-  die("Connection failed: " . $conn->connect_error);
-}
-    
-    $sql = "SELECT * FROM `produtos`;";
-    $result = $conn->query($sql);
-    
-      
-      
-      
-$conn->close();
-    
-?><?php
-      if ($result->num_rows > 0) {
-  // output data of each row
-        echo '<div class="fruit_container">';
-  while($row = $result->fetch_assoc()) {
-    echo "<div class='box'>
-    <img src='". $row["imagem"]."' >
-    <div class='link_box'>
-    <h5>" . $row["nome"]. "</h5>
-    <h5>Preco " . $row["preco"]. "</h5></div></div>";
-  }
-  echo '</div>';
-} else {
-  echo "0 results";
-}
-      ?>
-      
-      <?php
-      ?>
-      
-     
-
-  <!-- end fruit section -->
+  </section>
+  <!-- end contact section -->
 
 
   <!-- info section -->

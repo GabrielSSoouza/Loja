@@ -12,7 +12,7 @@
   <meta name="description" content="" />
   <meta name="author" content="" />
 
-  <title>Produtos</title>
+  <title>Metas</title>
 
   <!-- slider stylesheet -->
   <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.1.3/assets/owl.carousel.min.css" />
@@ -33,7 +33,7 @@
     <!-- header section strats -->
     <div class="brand_box">
       <a class="navbar-brand" href="../index.php">
-        <span>All Instruments</span>
+        <span>all Instruments</span>
       </a>
     </div>
     <!-- end header section -->
@@ -56,7 +56,7 @@
                   <a class="nav-link" href="../index.php">Home <span class="sr-only">(current)</span></a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="sobre.php">Sobre</a>
+                  <a class="nav-link" href="sobre.php">Sobre </a>
                 </li>
                 <li class="nav-item">
                   <a class="nav-link" href="produtos.php">Produtos</a>
@@ -83,66 +83,100 @@
 
   <!-- end nav section -->
 
-  <!-- fruit section -->
 
-  <section class="fruit_section layout_padding">
-    <div class="container">
+  <!-- client section -->
+
+  <section class="client_section layout_padding">
+    <div class="container ">
       <div class="heading_container">
+        <h2>O que podemos oferecer:</h2>
         <hr>
-        <h2>Produtos</h2>
       </div>
+      <div id="carouselExample2Controls" class="carousel slide" data-ride="carousel">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <div class="client_container layout_padding-top">
+              <div class="img-box">
+                <img src="../media/images/pietra.jpg" alt="">
+              </div>
+              <div class="detail-box">
+                <h5>Pietra</h5>
+                <p>Proposta:</p>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="client_container layout_padding-top">
+              <div class="img-box">
+                <img src="../media/images/gabriel.jpeg" alt="">
+              </div>
+              <div class="detail-box">
+                <h5>Gabriel</h5>
+                <p>Proposta:</p>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="client_container layout_padding-top">
+              <div class="img-box">
+                <img src="../media/images/joão.jpeg" alt="">
+              </div>
+              <div class="detail-box">
+                <h5>João</h5>
+                <p>Proposta:</p>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="client_container layout_padding-top">
+              <div class="img-box">
+                <img src="../media/images/kaua.jpeg" alt="">
+              </div>
+              <div class="detail-box">
+                <h5>Kauã</h5>
+                <p>Proposta:</p>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="client_container layout_padding-top">
+              <div class="img-box">
+                <img src="../media/images/nicolas.jpeg" alt="">
+              </div>
+              <div class="detail-box">
+                <h5>Nicolas</h5>
+                <p>Proposta:</p>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="client_container layout_padding-top">
+              <div class="img-box">
+                <img src="../media/images/bruce.jpeg" alt="">
+              </div>
+              <div class="detail-box">
+                <h5>Bruce</h5>
+                <p>Proposta:</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <a class="carousel-control-prev" href="#carouselExample2Controls" role="button" data-slide="prev">
+          <img src="../media/images/prev.png" alt="">
+          <span class="sr-only">Previous</span>
+        </a>
+        <a class="carousel-control-next" href="#carouselExample2Controls" role="button" data-slide="next">
+          <img src="../media/images/next.png" alt="">
+          <span class="sr-only">Next</span>
+        </a>
+      </div>
+
     </div>
-    <div class="container-fluid">
+  </section>
 
-      
-      <?php
-    $servername = "localhost";
-    $username = "fmmkayoa_allinstruments";
-    $password = "allinstruments";
-    $dbname = "fmmkayoa_allinstruments";
-    
-    // Create connection
-$conn = new mysqli($servername, $username, $password, $dbname);
-// Check connection
-if ($conn->connect_error) {
-  die("Connection failed: " . $conn->connect_error);
-}
-    
-    $sql = "SELECT * FROM `produtos`;";
-    $result = $conn->query($sql);
-    
-      
-      
-      
-$conn->close();
-    
-?><?php
-      if ($result->num_rows > 0) {
-  // output data of each row
-        echo '<div class="fruit_container">';
-  while($row = $result->fetch_assoc()) {
-    echo "<div class='box'>
-    <img src='". $row["imagem"]."' >
-    <div class='link_box'>
-    <h5>" . $row["nome"]. "</h5>
-    <h5>Preco " . $row["preco"]. "</h5></div></div>";
-  }
-  echo '</div>';
-} else {
-  echo "0 results";
-}
-      ?>
-      
-      <?php
-      ?>
-      
-     
-
-  <!-- end fruit section -->
-
+  <!-- end client section -->
 
   <!-- info section -->
-
   <section class="info_section layout_padding">
     <div class="container">
       <div class="info_logo">
@@ -152,7 +186,7 @@ $conn->close();
         <div class="row">
           <div class="col-md-4">
             <a href="">
-              <img src="../media/images/location.png" alt="">
+              <img src="../mediaimages/location.png" alt="">
               <span>Sede da empresa</span>
             </a>
           </div>
@@ -218,7 +252,7 @@ $conn->close();
     </p>
   </section>
   <!-- footer section -->
-
+  
 
   <script type="text/javascript" src="../view/js/jquery-3.4.1.min.js"></script>
   <script type="text/javascript" src="../view/js/bootstrap.js"></script>
