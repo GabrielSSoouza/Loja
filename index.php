@@ -399,14 +399,6 @@
         </div>
       </div>
       <div class="row">
-        <div class="col-md-8 col-lg-9">
-          <div class="info_form">
-            <form action="">
-              <input type="text" placeholder="Enter your email">
-              <button>Se inscreva</button>
-            </form>
-          </div>
-        </div>
         <div class="col-md-4 col-lg-3">
           <div class="info_social">
             <div>
