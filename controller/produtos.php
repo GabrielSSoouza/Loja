@@ -1,3 +1,7 @@
+<?php
+include ("conectar.php");
+session_id();
+?>
 <!DOCTYPE html>
 <html>
 
@@ -95,10 +99,10 @@
     <div class="container-fluid">
 
       
-      <?php
+    <?php
     $servername = "localhost";
-    $username = "fmmkayoa_allinstruments";
-    $password = "allinstruments";
+    $username = "root";
+    $password = "";
     $dbname = "fmmkayoa_allinstruments";
     
     // Create connection
@@ -119,20 +123,22 @@ $conn->close();
 ?><?php
       if ($result->num_rows > 0) {
   // output data of each row
-        echo '<div class="fruit_container">';
-  while($row = $result->fetch_assoc()) {
+  echo '<div class="fruit_container">';
+    while($row = $result->fetch_assoc()) {
     echo "<div class='box'>
-    <img src='". $row["imagem"]."' >
-    <div class='link_box'>
-    <h5>" . $row["nome"]. "</h5>
-    <h5>Preco " . $row["preco"]. "</h5></div></div>";
+            <img src='".$row["imagem"]."' >
+            <div class='link_box'>
+                <h5>" . $row["nome"]. "</h5>
+                <h5>Preco " . $row["preco"]. "</h5>
+                <a href='?adicionar=<?php echo " . $row['id_produto'] . "?>'>Adicionar ao carrinho</a>
+            </div>
+          </div>";
   }
   echo '</div>';
 } else {
   echo "0 results";
 }
       ?>
-      
       <?php
       ?>
       
